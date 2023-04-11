@@ -1,0 +1,189 @@
+*, 
+html,
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: ,Impact, 'bebas neue', 'Arial Narrow Bold', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.fContainer {
+    display: flex;
+    width: 100%;
+    height:75px;
+    background-color: rgb(167, 167, 167);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 1750px;
+    height: 50px;
+    background-color: rgb(35, 35, 37);
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.title {
+color: goldenrod;
+font-weight: 1000;
+font-family: ,'bebas neue';
+font-size: 2.1em;
+}
+
+.navigation {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navigation> li{
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation > li > a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.isimain{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url(first.png);
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.judulsdg{
+    text-align: center;
+    color: rgb(130, 113, 0);
+    padding-top: 100px;
+}
+
+.isitext{
+    text-align: center;
+    color: rgb(11, 11, 11);
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+}
+
+.active{
+    background-color: goldenrod;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    
+}
+
+.navigation > li > a:hover{
+    color: goldenrod;
+    transition: all .25s ease-in-out;
+
+
+}
+
+.navigation>li>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.navigation>li>img:hover{
+    width: 61px;
+    height: 61px;
+    border-radius: 61px;
+    transition: all .25s ease-in-out;
+}
+
+.active:hover{
+    color: white !important;
+    background-color: gray;
+    width: 61px !important;
+    height: 61px !important;
+    border-radius: 75px !important;
+    transition: all .25s ease-in-out
+}
+
+.Ourmember {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url(isi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Ourmember > a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.Ourmember > p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+#hero-banner{
+    background-image: url('heroban.jpg');
+       background-size: cover;
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       font-size: 20px;
+    padding: 15px;
+    width: 1489px;
+    height: 100vh;
+   }
+
+   .dp {
+    display: flex;
+    flex-direction: column;
+    width:  1519px;
+    height: 400vh;
+    background-image: url(Design\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+   }
