@@ -3,7 +3,7 @@ html,
  body {
     margin: 0;
     padding: 0;
-    font-family: ,Impact, 'bebas neue', 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'bebas neue', 'Arial Narrow Bold', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -35,7 +35,7 @@ html,
 .title {
 color: goldenrod;
 font-weight: 1000;
-font-family: ,'bebas neue';
+font-family: 'bebas neue';
 font-size: 2.1em;
 }
 
@@ -128,7 +128,7 @@ align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-image: url(About_us.jpg);
+    background-image: url(About_us.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -165,7 +165,7 @@ align-items: center;
 
 
 #hero-banner{
-    background-image: url('heroban.png');
+    background-image: url('Fuyuki.jpg');
        background-size: cover;
        background-position: center center;
        background-repeat: no-repeat;
