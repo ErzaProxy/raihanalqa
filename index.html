@@ -8,21 +8,20 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="fContainer">
-        <nav class="wrapper"> 
-            <div class="brand">
-                <div class="title">Nacht</div>
-            </div>
-            <ul class="navigation">
-                <li><a data-scroll="#isimain"  onchange="scrollto(isimain);">Main Page</a></li>
-                <li><a Onclick="window.location.href='#Ourmember'">Our Team</a></li>
-                <li><a Onclick="window.location.href='#dp'">Design Process</a></li>
-                <li><a href="/Product.html" class="active">Our Product</a></li>
-                <li><img src="Logoup.png" alt="/"></img></li>
-            </ul>
-        </nav>
-    </div>
-    </div>
+    <nav class="navbar">
+        <div class="logo">Nacht</div>
+        <ul class="nav-links">>
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li><a data-scroll="#isimain"  onchange="scrollto(isimain);">Home</a></li>
+            <li><a Onclick="window.location.href='#Ourmember'">>About Us</a></li>
+            <li class="services"><a Onclick="window.location.href='#dp'">>Design Process</a>
+              <li><a href="product.html">Product</a></li>
+      </div>
+    </ul>
+  </nav>
+
     <div class="herobanner"></div>
     <section id="hero-banner">
         <div class="container">
@@ -45,28 +44,28 @@
     </div>
     <div class="Ourmember" id="Ourmember">
         <img src="Logo.png" width="50%" class="center">
+        <h1>
+            we are from Nacht, we are students that going to solves SDG no 7 Problem
+        </h1>
         <h1 class="judulsdg">
            Our Member
         </h1>
-        <a href="https://raihanqadri.w3spaces.com/">Muhammad Raihan Al Qadri K.</a>
+        <a href="https://erzaproxy.github.io/raihanalqa/">Muhammad Raihan Al Qadri K.</a>
         <p>Ketua</p>
-        <a href="http://kresnaraka.w3spaces.com/">Kresna Raka</a>
+        <a href="https://sites.google.com/view/kresnaraka">Kresna Raka</a>
         <p>anggota</p>
         <a href="https://dennysptra.w3spaces.com/">Denny Saputra</a>
         <p>anggota</p>
-        <a href="/">Panji Restu</a>
+        <a href="https://panji14.w3spaces.com/">Panji Restu</a>
         <p>anggota</p>
     </div>
     <div class="dp" id="dp">
-        <h1>
-            
-        </h1>
+        <img src="Design1.png" alt="">
     </div>
-    <div class="product">
+    <div class="product" id="dp">
         <a href="https://nodus-ranverr.itch.io/lightsoff">
             Klik disini untuk menuju laman download
         </a>
     </div>
 </body>
 </html>
-
