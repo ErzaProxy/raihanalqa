@@ -2,70 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nacht</title>
+    <title>SEA Salon</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <nav class="navbar">
-        <div class="logo">Nacht</div>
-        <ul class="nav-links">>
-          <input type="checkbox" id="checkbox_toggle" />
-          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-          <div class="menu">
-            <li><a data-scroll="#isimain"  onchange="scrollto(isimain);">Home</a></li>
-            <li><a Onclick="window.location.href='#Ourmember'">>About Us</a></li>
-            <li class="services"><a Onclick="window.location.href='#dp'">>Design Process</a>
-              <li><a href="product.html">Product</a></li>
+<body> 
+    <nav class = navbar> <!-- Creating a navigation bar -->
+    <div class =  logo>SEA Salon</div>
+    <ul class="nav-links">
+      <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a> <ul class="dropdown">
+            <li><a href="Services/hair.html">Haircuts and Styling</a></li>
+            <li><a href="Services/manicure.html"></a>Manicure and Pedicure</li>
+            <li><a href="Services/face.html">Facial Treatments</a></li>
+            <li><a href="reserve.html">Reservation</a></li>
+          </ul></li>
+          <li><a href="contactDetail.html">Contact Detail</a>
+            <li><a Onclick="window.location.href='#reviews'">Review</a></li>
+          <li><a href="register.html">Login</a></li>
+    </div>
+  </ul>
+    </nav>
+    <div class="mainMenu">
+      <div class="swrapper">
+        <h1 class="welcome">Welcome to SEA Salon</h1>
+        <h5 class="subwelcome">~Beauty and Elegance Redefined~</h5>
+        <div class="start">
+        <a  href="services.html" class="start">『Start Services』</a>
       </div>
-    </ul>
-  </nav>
-
-    <div class="herobanner"></div>
-    <section id="hero-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                </div>
-            </div>
+          <div class="slider">
+            <img id="slide1" src="BackgroundIMG/360_F_606876358_NU2hCq3RP7xDpXG6PWnAMGGAun0fB5tW (1).jpg">
+            <img id="slide2" src="BackgroundIMG/Salon.png">
+            <img id="slide3" src="BackgroundIMG/a29c90c4-0dfd-4605-9030-4358020610a0_169.jpeg">
+            <img id="slide4" src="BackgroundIMG/mens-facial-treatment.jpg">
+          </div>
+          <div class="sliderNav">
+            <a href="#slide1"></a>
+            <a href="#slide2"></a>
+            <a href="#slide3"></a>
+            <a href="#slide4"></a>
+          </div>
+      </div>
+  </div>
+  <div class="reviews" id="reviews">
+    <div class="revwrapper">
+      <div class="post">
+      <div class="thanks">Thanks for Your Rating</div>
+      <div class="edit">Edit Text</div>
+    </div>
+    <div class="starwidget">
+      <form action="connect.php" class="ratings" method="post">
+      <input type="radio" name="rate" id="rate5"  value="5"/>
+      <label for="rate5" class="fa fa-star"></label >
+      <input type="radio" name="rate" id="rate4"  value="4"/>
+      <label for="rate4" class="fa fa-star"></label>
+      <input type="radio" name="rate" id="rate3"  value="3"/>
+      <label for="rate3" class="fa fa-star"></label>
+      <input type="radio" name="rate" id="rate2" value="2"/>
+      <label for="rate2" class="fa fa-star"></label>
+      <input type="radio" name="rate" id="rate1" value="1"/>
+      <label for="rate1" class="fa fa-star"></label>
+        <header></header>
+        <div class="hiddenArea">
+        <div class="textarea">
+          <textarea class="nama" cols="30" placeholder="Your Name...." name="namaRate" id="namaRate"></textarea>
+          <textarea cols="30" placeholder="Describe your experience..." name="deskripsiRate" id="deskripsiRate"></textarea>
         </div>
+        <div class="ratebutton" value="Submit">
+          <button type="submit">Post</button>
+        </div>
+        </div>
+      </form>
     </div>
-   
-</section>
-    <div class="isimain" id="isimain">
-        <h1 class="judulsdg">
-            Affordable and Clean Energy
-        </h1>
-
-        <p class="isitext">
-            Affordable and Clean Energy is one of 17 SDGs(Sustainable Development Goals) Sustainable Development Goal are a collection of 17 interlinked objectives designed to serve as a "shared blueprint for peace and prosperity for people and the planet now and into the future" The SDGs are: no poverty; zero hunger; good health and well-being; quality education; gender equality; clean water and sanitation; affordable and clean energy; decent work and economic growth; industry, innovation and infrastructure; reduced inequalities; sustainable cities and communities; responsible consumption and production; climate action; life below water; life on land; peace, justice, and strong institutions; and partnerships for the goals. established by the United Nations General Assembly in 2015. Affordable and Clean Energy aims to "Ensure access to affordable, reliable, sustainable and modern energy for all." Access to energy is a very important pillar for the wellbeing of the people as well as economic development and poverty alleviation.
-        </p>
     </div>
-    <div class="Ourmember" id="Ourmember">
-        <img src="Logo.png" width="50%" class="center">
-        <h1>
-            we are from Nacht, we are students that going to solves SDG no 7 Problem
-        </h1>
-        <h1 class="judulsdg">
-           Our Member
-        </h1>
-        <a href="https://erzaproxy.github.io/raihanalqa/">Muhammad Raihan Al Qadri K.</a>
-        <p>Ketua</p>
-        <a href="https://sites.google.com/view/kresnaraka">Kresna Raka</a>
-        <p>anggota</p>
-        <a href="https://dennysptra.w3spaces.com/">Denny Saputra</a>
-        <p>anggota</p>
-        <a href="https://panji14.w3spaces.com/">Panji Restu</a>
-        <p>anggota</p>
-    </div>
-    <div class="dp" id="dp">
-        <img src="Design1.png" alt="">
-    </div>
-    <div class="product" id="dp">
-        <a href="https://nodus-ranverr.itch.io/lightsoff">
-            Klik disini untuk menuju laman download
-        </a>
-    </div>
-</body>
+    <script>
+      const rateButton= document.querySelector("button");
+      const post= document.querySelector(".post");
+      const starWidget= document.querySelector(".starwidget");
+      const reditbutton= document.querySelector(".edit");
+      rateButton.onclick = ()=>{
+        starWidget.style.display = "none";
+        post.style.display = "block";
+        reditbutton.onclick = ()=>{
+        starWidget.style.display = "block";
+        post.style.display = "none";
+        return false;
+      }
+      }
+    </script>
+  </div>
+  </body>
 </html>

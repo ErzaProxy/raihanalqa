@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="reserveWrapper">
+        <div class="reviews" id="reviews">
+            <div class="revwrapper">
+              <div class="reserveBar">
+              <div class="post">
+              <div class="thanks">Reservation Submitted</div>
+              <a href="index.html" class="back">Back to Main?</a>
+            </div>
+              <form action="connect2.php" method="post">
+                <header></header>
+                <div class="textarea">
+                  <input type="text" name="Name" placeholder="Nama">
+                  <input type="tel" name="Telephone" placeholder="Nomor Telephone">
+                  <div class="jenisReservasi">
+                  <label for="jenisReservasi" class="jenisReservasi">
+                    <input type="radio" name="jenisReservasi" value="Haircut" class="jenisReservasi"> Haircut and Styling
+                  </label>
+                  <label for="jenisReservasi" class="jenisReservasi">
+                    <input type="radio" name="jenisReservasi" value="Manicure" class="jenisReservasi"> Manicure and Pedicure
+                  </label>
+                  <label for="jenisReservasi" class="jenisReservasi">
+                    <input type="radio" name="jenisReservasi" value="Facial" class="jenisReservasi"> Facial Treatments
+                  </label>
+                  <input type="time" name="waktu" min="09:00" max="20:00" required>
+                </div>
+                <div class="ratebutton">
+                  <button type="submit">Post</button>
+                </div>
+              </form>
+            </div>
+            </div>
+          </div>
+            <script>
+              const rateButton= document.querySelector("button");
+              const post= document.querySelector(".post");
+              const teksarea= document.querySelector(".textarea");
+              const reditbutton= document.querySelector(".edit");
+              rateButton.onclick = ()=>{
+                teksarea.style.display = "none";
+                rateButton.style.display = "none";
+                post.style.display = "block";
+                reditbutton.onclick = ()=>{
+                teksarea.style.display = "block";
+                rateButton.style.display = "block";
+                post.style.display = "none";
+                return false;
+              }
+              }
+            </script>
+          </div>
+    </div>
+</body>
+</html>

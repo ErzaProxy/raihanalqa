@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEA Salon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="regist">
+    <div class="registWrapper">
+      <form action="connect1.php" method="post">
+      <h1>Registration Now</h1>
+      <label for="id">
+        Id Number
+        <input type="number" name="idNum"> 
+      </label>
+      <label for="fullName">
+        Full Name
+        <input type="text" name="fullName"> 
+      </label>
+      <label for="email">
+        Email Adress
+        <input type="text" name="email"> 
+      </label>
+      <label for="number">
+        Phone Number
+        <input type="number" name="number"> 
+      </label>
+      <label for="password">
+        password
+        <input type="password" name="password"> 
+      </label>
+      <label for="role">
+        Role
+        <label for="admin">
+        <input type="radio" name="role" value="admin">Admin</label>
+        <label for="user">
+          <input type="radio" name="role" value="user">User</label>
+      </label>
+      <input type="submit">
+      <p>Already had an account?</p><a href="login.html">Login</a>
+    </form>
+    </div>
+  </div>
+  </body>
+</html>
